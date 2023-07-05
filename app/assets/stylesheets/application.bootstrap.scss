@@ -1,0 +1,74 @@
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
+
+#logo {
+    float: left;
+    font-size: 1.7em;
+    color: orange;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+#logo:hover {
+    color: rgba(228, 160, 1, 0.488);
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.jumbotron {
+    background-image: url("20220926_181401.jpg");
+    background-size: contain;
+    min-height: 550px;
+}
+
+.jumbotron h1 {
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+.btn-xlarge {
+    font-size: 1.7em;
+    background-color: rgb(24, 151, 103);
+    border-color:  rgb(24, 151, 103);
+}
+
+.footer {
+    margin-top: 45px;
+    padding-top: 5px;
+    border-top: 1px solid #eaeaea;
+    color: #777;
+}
+
+.footer a:link {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #222;
+}
+
+.footer small {
+    float: left;
+}
+
+.footer ul {
+    float: right;
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer ul li {
+    float: left;
+    margin-bottom: 15px;
+}
+
+.nav-link a:link {
+    text-decoration: none;
+}
