@@ -1,6 +1,9 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
-
+.navbar {
+    text-decoration: none;
+    text-decoration-color: #eaeaea;
+}
 #logo {
     float: left;
     font-size: 1.7em;
@@ -12,6 +15,29 @@
 
 #logo:hover {
     color: rgba(228, 160, 1, 0.488);
+    text-decoration: none;
+}
+
+.dropdown-menu a{
+    color: #222 !important;
+}
+.dropdown-menu li {
+    text-align: center;
+}
+.dropdown-menu a:hover {
+    color: #777 !important;
+}
+
+nav.navbar li a {
+    color: whitesmoke;
+    text-align: left;
+}
+
+nav.navbar li a:hover{
+color: orange;
+}
+
+.nav-link a:link {
     text-decoration: none;
 }
 
@@ -42,22 +68,26 @@
 .footer {
     margin-top: 45px;
     padding-top: 5px;
-    border-top: 1px solid #eaeaea;
+    padding-bottom: 5px;
+    border-top: 2px solid #eaeaea;
     color: #777;
 }
 
 .footer a:link {
     text-decoration: none;
+    color: #000;
 }
 
 .footer a:hover {
-    color: #222;
+    color: orange;
 }
 
 .footer small {
     float: left;
 }
-
+.footer small a {
+    color: #777;
+}
 .footer ul {
     float: right;
     list-style: none;
@@ -65,10 +95,20 @@
 }
 
 .footer ul li {
+    color: #777;
     float: left;
     margin-bottom: 15px;
 }
 
 .nav-link a:link {
+    text-decoration: none;
+}
+
+.btn {
+    margin-top: 5px;
+}
+
+.close {
+    float: right;
     text-decoration: none;
 }
