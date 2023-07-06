@@ -16,12 +16,12 @@ class ArticlesController < ApplicationController
 
 	def create
 		@article = Article.new(article_params)
-
+		@article.user = User.first
 		if @article.save
 			flash[:success] = "Article created"
 			redirect_to article_path(@article)
 		else
-			render "new"
+			render "new", status: :unprocessable_entity
 		end
 	end
 
@@ -31,7 +31,7 @@ class ArticlesController < ApplicationController
 			flash[:success] = "Article updated"
 			redirect_to article_path(@article)
 		else
-			render "edit"
+			render "edit", status: :unprocessable_entity
 		end
 	end
 	
