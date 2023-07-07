@@ -1,5 +1,7 @@
 <h1 align="center">All bloggers</h1>
-
+<div class="digg_pagination" >
+  <%= will_paginate %>
+</div>
 <% @users.each do |user| %>
 	<ul id="listing" >
 		<div class="row">
@@ -13,3 +15,7 @@
 		</div>
 	</ul>
 <% end %>
+
+<div class="digg_pagination" >
+  <%= will_paginate %>
+</div>
