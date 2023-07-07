@@ -3,6 +3,7 @@
 .navbar {
     text-decoration: none;
     text-decoration-color: #eaeaea;
+    margin-bottom: 10px;
 }
 #logo {
     float: left;
@@ -89,6 +90,12 @@ color: orange;
     padding-bottom: 15px;
 }
 
+.form-group {
+    margin: 5px;
+}
+
+
+
 .footer {
     margin-top: 45px;
     padding-top: 5px;
@@ -137,3 +144,6 @@ color: orange;
     text-decoration: none;
 }
 
+.control-label {
+    float: left;
+}
