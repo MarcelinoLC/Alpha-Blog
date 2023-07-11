@@ -16,9 +16,7 @@
             </a>
             <ul class="dropdown-menu">
               <li class="nav-link"><%= link_to "New article", new_article_path %></li>
-              <li class="nav-link"><%= link_to "View profile", user_path(current_user) %></li>
               <li><hr class="dropdown-divider"></li>
-              <li class="nav-link"><%= link_to "Log out", logout_path, method: :delete %></li>
             </ul>
           </li>
         
@@ -30,9 +28,9 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <% if logged_in? %>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown" id="drop">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Your profile
+              Your profile <%= "(Admin)" if current_user.admin? %>
             </a>
             <ul class="dropdown-menu">
               <li class="nav-link"><%= link_to "Edit profile", edit_user_path(current_user) %></li>
