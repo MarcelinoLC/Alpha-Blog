@@ -1,0 +1,21 @@
+<h1 align="center">Listing categories</h1>
+
+<div>
+	<div class="digg_pagination" >
+		<%= will_paginate %>
+	</div>
+	<% @categories.each do |c| %>
+		<ul id="listing">
+			<div class="row">
+				<div class="d-flex justify-content-center" >
+					<li class="article-title">
+						<%= link_to "#{c.name}", category_path(c) %>
+					</li>
+				</div>
+			</div>
+		</ul>
+	<% end %>
+  <div class="digg_pagination" >
+		<%= will_paginate %>
+	</div>
+</div>
