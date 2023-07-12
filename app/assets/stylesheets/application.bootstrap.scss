@@ -103,10 +103,28 @@ color: orange;
 }
 
 .form-group {
-    margin: 5px;
+    margin-right: 5px;
 }
 
+.checkbox-inline {
+    margin: 5px;
+    
+}
 
+.badge {
+    background-color: #cef6f5;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.badge a:link {
+    text-decoration: none;
+}
+
+.input_checkbox input {
+    width: auto !important;
+}
 
 .footer {
     margin-top: 45px;
